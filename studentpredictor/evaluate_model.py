@@ -1,7 +1,7 @@
 import json
 import math
 import pickle
-
+import numpy as np
 import pandas as pd
 from sklearn.metrics import mean_squared_error
 
@@ -16,6 +16,7 @@ r_squared = model.score(X_test, y_test)
 
 y_pred = model.predict(X_test)
 rmse = math.sqrt(mean_squared_error(y_test, y_pred))
+#rmse = (np.sqrt(mean_squared_error(y_train, y_train_predict)))
 
 with open(str(Config.METRICS_FILE_PATH), "w") as outfile:
     json.dump(dict(r_squared=r_squared, rmse=rmse), outfile)
