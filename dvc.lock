@@ -1,0 +1,18 @@
+evaluate:
+  cmd: python evaluate_model.py
+  deps:
+  - path: assets/features
+    md5: c3b168122d0f4fff3f82c4576ea2fa78.dir
+    size: 12490
+    nfiles: 4
+  - path: assets/models
+    md5: 9615b9202204b7af29283e8d8ee38424.dir
+    size: 909357
+    nfiles: 1
+  - path: evaluate_model.py
+    md5: db244528b62829544897d05e92072f01
+    size: 675
+  outs:
+  - path: assets/metrics.json
+    md5: 1b38e6e7793f5c46328b791e9224c457
+    size: 60

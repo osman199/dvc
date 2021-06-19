@@ -1,0 +1,10 @@
+stages:
+  evaluate:
+    cmd: python evaluate_model.py
+    deps:
+    - assets/features
+    - assets/models
+    - evaluate_model.py
+    metrics:
+    - assets/metrics.json:
+        cache: false
