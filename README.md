@@ -31,3 +31,5 @@ disable analytics (optional)
 ```
 dvc config core.analytics false
 ```
+## License
+MIT
