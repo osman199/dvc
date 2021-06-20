@@ -1,7 +1,8 @@
 ## Setup
 
 ```
-git clone git@github.com:curiousily/Reproducible-ML-with-DVC.git
+git clone git@github.com:osman199/dvc.git
+
 ```
 
 ```
